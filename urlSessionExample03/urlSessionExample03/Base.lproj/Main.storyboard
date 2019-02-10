@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="urlSessionExample03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu uygulama http://codeworkagency.com/ioskitap/logoaydin.jpg adresindeki imajı yüklemektedir." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-rp-GHn">
+                                <rect key="frame" x="30" y="44" width="315" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aXC-p3-j65"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-co-qXZ">
+                                <rect key="frame" x="67" y="223.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ApL-Wn-ncQ"/>
+                                    <constraint firstAttribute="height" constant="240" id="jRW-Ah-DNp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-IA-ieJ">
+                                <rect key="frame" x="127.5" y="488.5" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.43949568820000001" green="0.57186220720000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="BfP-Z0-Ykm"/>
+                                    <constraint firstAttribute="height" constant="30" id="IHr-XY-AXj"/>
+                                </constraints>
+                                <state key="normal" title="Yükle">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26u-cd-Oex"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PT0-IA-ieJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Wg-Yn-8vo"/>
+                            <constraint firstItem="N5a-rp-GHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TWl-g9-Vjk"/>
+                            <constraint firstItem="kDR-co-qXZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ajb-Ef-O0Q"/>
+                            <constraint firstItem="kDR-co-qXZ" firstAttribute="top" secondItem="N5a-rp-GHn" secondAttribute="bottom" constant="30" id="c1X-km-ekB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N5a-rp-GHn" secondAttribute="trailing" constant="30" id="g11-7B-6wI"/>
+                            <constraint firstItem="kDR-co-qXZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="g87-n5-mrN"/>
+                            <constraint firstItem="PT0-IA-ieJ" firstAttribute="top" secondItem="kDR-co-qXZ" secondAttribute="bottom" constant="25" id="zsP-Pp-On2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgview" destination="kDR-co-qXZ" id="d7n-pX-dkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

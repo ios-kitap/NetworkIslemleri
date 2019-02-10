@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="urlSessionExample04" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6S-9W-h68">
+                                <rect key="frame" x="87.5" y="258.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bZ7-Tu-JsW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wao-Pa-bFd">
+                                <rect key="frame" x="30" y="388.5" width="315" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ynb-Pn-9R5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-C3-s4t">
+                                <rect key="frame" x="127.5" y="328.5" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.43949568820000001" green="0.57186220720000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L9K-Dv-3ZR"/>
+                                    <constraint firstAttribute="width" constant="120" id="fqq-SN-te0"/>
+                                </constraints>
+                                <state key="normal" title="Gönder">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLu-BA-2vU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu uygulama http://codeworkagency.com/ioskitap/example03.php adresine aşağıya girilen metni POST metodu ile göndermektedir." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ups-1M-jCc">
+                                <rect key="frame" x="30" y="78.5" width="315" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="q8F-Hv-YvH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Toj-C3-s4t" firstAttribute="top" secondItem="t6S-9W-h68" secondAttribute="bottom" constant="40" id="99f-Fm-dRo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wao-Pa-bFd" secondAttribute="trailing" constant="30" id="Ggg-pH-oFw"/>
+                            <constraint firstItem="t6S-9W-h68" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gms-JH-8f6"/>
+                            <constraint firstItem="Toj-C3-s4t" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ma5-HI-LmQ"/>
+                            <constraint firstItem="ups-1M-jCc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PAh-BT-sOd"/>
+                            <constraint firstItem="wao-Pa-bFd" firstAttribute="top" secondItem="Toj-C3-s4t" secondAttribute="bottom" constant="30" id="ZN1-if-GDT"/>
+                            <constraint firstItem="Toj-C3-s4t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bWx-F9-iYq"/>
+                            <constraint firstItem="t6S-9W-h68" firstAttribute="top" secondItem="ups-1M-jCc" secondAttribute="bottom" constant="30" id="eMY-o4-EUG"/>
+                            <constraint firstItem="wao-Pa-bFd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="knL-Xs-FKJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ups-1M-jCc" secondAttribute="trailing" constant="30" id="pEv-Wr-MkN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cevap" destination="wao-Pa-bFd" id="Igz-tf-ktS"/>
+                        <outlet property="field" destination="t6S-9W-h68" id="h6l-zF-qPY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
